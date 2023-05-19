@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+*::selection {
+  background-color: rgba(62, 6, 141, 0.289);
+}
+.parent {
+  width: 95%;
+  min-height: 95vh;
+}
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #EEEEEE;
+  text-align: center;
+}
+
+
+.p-parent p{
+  width: 58%;
+  margin: auto;  
+}
+
+.first-part {
+  min-height: 15rem;
+  width: 95%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 1px solid black; */
+}
+
+/* Second Part */
+
+.second-part , .second-part *{
+  background-color: white;
+}
+.parent-of-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2%;
+  align-items: center;
+  width: 100%;
+  min-height: 20rem !important;
+  /* border: 1px solid red; */
+}
+.parent-of-images img{
+  transition: 0.5s ease-in-out;
+}
+.parent-of-images img:hover {
+  scale: 1.05;
+  opacity: 0.8;
+  rotate: -2.3deg;
+}
+
+/* Third Part */
+.part-3 {
+  width: 100%;
+}
+.ul-parent {
+  margin: auto;
+}
+.part-3 li {
+  text-align: left;
+}
+
+/* Fourth Part */ 
+.part-4 {
+  background-color: white;
+  width: 100%;
+}
+
+.verse-container {
+  border-radius: 50px;
+  background-color: #fbf4f4;
+  width: 40%;
+  margin: auto;
+  padding-block: 1rem;
+  transition: 0.5s;
+  cursor: pointer;
+  user-select: none;
+}
+.verse-container:hover {
+  scale: 1.02;
+  rotate: -1.05deg;
+}
+/* Extra small devices (phones) */
+@media only screen and (max-width: 420px) {
+  .col-5 {
+    width: 50% !important;
+  }
+  .verse-container {
+    width: 100% !important;
+}
+
+}
+/* Extra small devices (phones) */
+@media only screen and (max-width: 575px) {
+  .first-part {
+    min-height: 15rem;
+    width: 100%;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .p-parent p{
+    width: 90%;
+    margin: auto;  
+    
+  }
+  .parent-of-images {
+    min-height: 15rem !important;
+  }
+  .verse-container {
+    width: 60%;
+}
+
+  }
+
+/* Small devices (tablets) */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+  .p-parent p{
+    width: 90%;
+    margin: auto;  
+    
+  }
+  .verse-container {
+    width: 60%;
+}
+
+
+/* Medium devices (laptops, small desktops) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* CSS rules here */
+}
+
+/* Large devices (desktops) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* CSS rules here */
+}
+
+/* Extra large devices (large desktops) */
+@media only screen and (min-width: 1200px) {
+  /* CSS rules here */
+}
